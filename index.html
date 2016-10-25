@@ -7,9 +7,10 @@
 </head>
 <body ng-controller="MainController">
     {{user}}
-    <div ng-repeat="user in users">
+    <div ng-repeat="user in users" ng-class="{favorite: user.isFavorite}">
         <img ng-src="{{user.avatar}}"/>
         {{user.first_name}} {{user.last_name}}
+        <button ng-click="toggleFavorite(user.id)">Favorite</button>
     </div>
 
 

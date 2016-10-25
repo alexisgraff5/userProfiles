@@ -5,4 +5,6 @@ angular.module('userProfiles').controller('MainController', function($scope, mai
 
   $scope.getUsers();
 
+  $scope.toggleFavorite = mainService.toggleFavorite;
+
 });

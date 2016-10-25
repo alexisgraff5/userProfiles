@@ -26,4 +26,8 @@ angular.module('userProfiles').service('mainService', function(){
     return data;
   }
 
+  this.toggleFavorite = function(id){
+    data[id].isFavorite = !data[id].isFavorite;
+  }
+
 });
