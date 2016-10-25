@@ -3,4 +3,6 @@ angular.module('userProfiles').controller('MainController', function($scope, mai
     $scope.users = mainService.getUsers();
   }
 
-})
+  $scope.getUsers();
+
+});
